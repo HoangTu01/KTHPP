@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>KTHP</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>KTHP</name>
+	<name>kthp</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -35,6 +35,12 @@
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
@@ -45,7 +51,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.32</version> <!-- Hoặc phiên bản mới nhất -->
+			<version>8.0.32</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

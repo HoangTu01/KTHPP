@@ -9,7 +9,6 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
     private String brand;
     private String category;
@@ -17,7 +16,6 @@ public class Product {
     private String description;
     private String imageFilename;
 
-    // Constructors
     public Product() {
     }
 
@@ -31,6 +29,7 @@ public class Product {
     }
 
     // Getters and Setters
+
     public Long getId() {
         return id;
     }
@@ -85,18 +84,5 @@ public class Product {
 
     public void setImageFilename(String imageFilename) {
         this.imageFilename = imageFilename;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", brand='" + brand + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                ", description='" + description + '\'' +
-                ", imageFilename='" + imageFilename + '\'' +
-                '}';
     }
 }
